@@ -30,6 +30,9 @@
       color: #777;
       margin-top: 80px;
     }
+    .social {
+      margin: 30px 0;
+    }
   </style>
 </head>
 <body>
@@ -37,6 +40,34 @@
   <h1>Site em construção</h1>
   <p>Nosso site já está vinculado ao domínio <strong>pontotecnico.tec.br</strong> e em breve estará no ar com novidades!</p>
   <p>Agradecemos sua visita. Enquanto isso, acompanhe nossas atualizações pelas redes sociais ou entre em contato por e-mail.</p>
+
+  <!-- Ícone com link -->
+  <div class="social">
+    <a href="https://www.facebook.com/www.pontotecnicoengenharia.com.br" target="_blank">
+      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook"/> Acompanhe no Facebook
+    </a>
+  </div>
+
+  <!-- Plugin do Facebook -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0" nonce="abc123"></script>
+
+  <div class="fb-page" 
+    data-href="https://www.facebook.com/www.pontotecnicoengenharia.com.br" 
+    data-tabs="timeline" 
+    data-width="" 
+    data-height="" 
+    data-small-header="false" 
+    data-adapt-container-width="true" 
+    data-hide-cover="false" 
+    data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/www.pontotecnicoengenharia.com.br" 
+      class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/www.pontotecnicoengenharia.com.br">Ponto Técnico Engenharia</a>
+    </blockquote>
+  </div>
+
   <div class="footer">
     &copy; 2025 Ponto Técnico Engenharia e Construções LTDA
   </div>
