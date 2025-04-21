@@ -1,6 +1,4 @@
 
-/* style.css - Estilo para o site da Ponto Técnico Engenharia */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -56,18 +54,14 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.obra-card h3 {
-  margin-top: 0;
-}
-
 .obra-card button {
   background-color: #003366;
-  color: #fff;
+  color: white;
   border: none;
   padding: 10px 15px;
   margin-top: 10px;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 form {
@@ -88,8 +82,8 @@ form button {
   color: white;
   border: none;
   padding: 10px;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 footer {
