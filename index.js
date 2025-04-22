@@ -1,13 +1,28 @@
-
+import Head from "next/head";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black">
+      <Head>
+        <title>Ponto Técnico Engenharia</title>
+        <meta name="description" content="Execução de obras, projetos técnicos e consultoria especializada em engenharia." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <section className="bg-gradient-to-r from-[#5c1e1e] to-[#8e4e1e] text-white py-16 px-6 text-center">
         <h1 className="text-4xl font-bold mb-4">Ponto Técnico Engenharia</h1>
         <p className="text-xl">Do Virtual ao Concreto</p>
+        <Image 
+          src="/construction-banner.jpg" 
+          alt="Imagem de obra em andamento representando engenharia moderna" 
+          width={1200} 
+          height={400} 
+          className="mx-auto mt-6 rounded-xl" 
+        />
       </section>
 
       <section className="py-10 px-6 grid gap-6 md:grid-cols-3">
@@ -34,9 +49,16 @@ export default function Home() {
       <section className="bg-gray-100 py-12 px-6 text-center">
         <h2 className="text-3xl font-bold mb-4">Entre em contato</h2>
         <p className="mb-6">Solicite um orçamento ou tire dúvidas com nossa equipe.</p>
-        <Button className="bg-[#5c1e1e] text-white hover:bg-[#411616] px-6 py-3 rounded-2xl text-lg">
-          Fale conosco no WhatsApp
-        </Button>
+        <a 
+          href="https://wa.me/5599999999999" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Fale conosco no WhatsApp"
+        >
+          <Button className="bg-[#5c1e1e] text-white hover:bg-[#411616] px-6 py-3 rounded-2xl text-lg">
+            Fale conosco no WhatsApp
+          </Button>
+        </a>
       </section>
 
       <footer className="bg-black text-white text-center py-6">
